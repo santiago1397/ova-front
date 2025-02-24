@@ -16,7 +16,6 @@ export default function DatosTutor({ register, errors, setValue, getValues }) {
           <label>Nacionalidad:</label>
           <div>
             <select {...register("tutor_nationality", {
-              required: 'Seleccione la Nacionalidad',
               pattern: {}
             })}>
               <option value="Venezolano">Venezolano</option>
@@ -31,7 +30,6 @@ export default function DatosTutor({ register, errors, setValue, getValues }) {
           <div>
             <input className="add-input-2" minLength={5} maxLength={9} type="text" 
               {...register("tutor_ci", {
-                required: 'ingrese la cédula',
                 pattern: {
                   value: /^[0-9]{5,9}$/,
                   message: 'Por favor ingrese una cedula valida'
@@ -49,7 +47,6 @@ export default function DatosTutor({ register, errors, setValue, getValues }) {
           <div>
             <input className="add-input-2" minLength={5} maxLength={70} type="text" 
               {...register("tutor_firstname", {
-                required: 'ingrese primer nombre',
                 pattern: {
                   value: /^[a-zA-Z0-9áéíóúÁÉÍÓÚñÑ\s]+$/,
                   message: 'Solo se permiten letras, espacios y numeros'
@@ -82,7 +79,6 @@ export default function DatosTutor({ register, errors, setValue, getValues }) {
           <div>
             <input className="add-input-2" minLength={5} maxLength={70} type="text" 
               {...register("tutor_firstlastname", {
-                required: 'ingrese primer apellido',
                 pattern: {
                   value: /^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$/,
                   message: 'Solo se permiten letras y espacios'
@@ -98,7 +94,6 @@ export default function DatosTutor({ register, errors, setValue, getValues }) {
           <div>
             <input className="add-input-2" minLength={5} maxLength={70} type="text" 
               {...register("tutor_secondlastname", {
-                required: 'ingrese segundo apellido',
                 pattern: {
                   value: /^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$/,
                   message: 'Solo se permiten letras y espacios'
@@ -115,7 +110,6 @@ export default function DatosTutor({ register, errors, setValue, getValues }) {
           <label>Género:</label>
           <div>
             <select {...register("tutor_gender", {
-              required: 'Seleccione la Género',
             })}>
               <option value="Femenino">Femenino</option>
               <option value="Masculino">Masculino</option>
@@ -128,7 +122,6 @@ export default function DatosTutor({ register, errors, setValue, getValues }) {
           <label>Estado Civil:</label>
           <div>
             <select {...register("tutor_civilstatus", {
-              required: 'Seleccione la Género',
             })}>
               <option value="Soltero">Soltero</option>
               <option value="Casado">Casado</option>
@@ -147,7 +140,6 @@ export default function DatosTutor({ register, errors, setValue, getValues }) {
           <div>
             <input className="add-input-2" minLength={5} maxLength={70} type="text" 
               {...register("tutor_phone1", {
-                required: 'ingrese teléfono',
                 pattern: {
                   value: /^[0-9]{10,11}$/,
                   message: 'Ingrese numero valido'
@@ -180,7 +172,6 @@ export default function DatosTutor({ register, errors, setValue, getValues }) {
           <div>
             <input className="add-input-2" minLength={5} maxLength={70} type="email" 
               {...register("tutor_email", {
-                required: 'ingrese correo',
               })}
             />
             <div>{errors.tutor_email && <span className="error-message">{errors.tutor_email.message}</span>}</div>
@@ -227,7 +218,6 @@ export default function DatosTutor({ register, errors, setValue, getValues }) {
           <label>Especialidad del Tutor:</label>
           <div>
             <select {...register("tutor_especiality", {
-              required: 'Seleccione la Género',
             })}>
               <option value="Física">Física</option>
               <option value="Biología">Biología</option>
