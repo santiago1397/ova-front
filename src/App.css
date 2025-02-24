@@ -1,0 +1,89 @@
+/* Estilos generales del formulario (ya existentes) */
+form {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Estilos para DatosTutor (ya existentes) */
+.inputs-2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.schedule-name-input {
+    flex: 1 1 300px;
+    min-width: 250px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.add-input-2 {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.8em;
+    display: block;
+    margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+    .inputs-2 {
+        flex-direction: column;
+    }
+
+    .schedule-name-input {
+        width: 100%;
+    }
+}
+
+/* Estilos para el componente de selección de estado, municipio y parroquia */
+.dptcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.dptcontainer select {
+    flex: 1 1 200px;
+    /* Ajusta el ancho según tus necesidades */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    min-width: 150px;
+    /* Asegura que no se vean muy estrechos */
+}
+
+@media (max-width: 768px) {
+    .dptcontainer {
+        flex-direction: column;
+    }
+
+    .dptcontainer select {
+        width: 100%;
+        flex: 1 1 20px;
+    }
+}
