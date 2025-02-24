@@ -47,13 +47,13 @@ export default function DatosStudent({ register, errors, setValue, getValues }) 
           </div>
         </div>
         <div className="schedule-name-input">
-          <label>Cédula:</label>
+          <label>Cédula o Cédula escolar:</label>
           <div>
             <input className="add-input-2" minLength={5} maxLength={70} type="text" 
               {...register("student_CI", {
                 required: 'ingrese cédula del estudiante',
                 pattern: {
-                  value: /^[0-9]{5,9}$/,
+                  value: /^[0-9]{8,13}$/,
                   message: 'Por favor ingrese una cedula valida'
                 }
               })}
@@ -208,7 +208,7 @@ export default function DatosStudent({ register, errors, setValue, getValues }) 
           </div>
         </div>
 
-        <div className="schedule-name-input">
+        {/* <div className="schedule-name-input">
           <label>Teléfono Local:</label>
           <div>
             <input className="add-input-2"  type="text" placeholder='nombre de la actividad'
@@ -221,7 +221,7 @@ export default function DatosStudent({ register, errors, setValue, getValues }) 
             />
             <div>{errors.student_phone2 && <span className="error-message">{errors.student_phone2.message}</span>}</div>
           </div>
-        </div>
+        </div> */}
 
       </div>
 
