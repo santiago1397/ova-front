@@ -9,7 +9,7 @@ export default function DatosTutor({ register, errors, setValue, getValues }) {
       <br />
       <br />
       <h2>
-        Datos del Tutor
+        Datos del Representante
       </h2>
       <div className="inputs-2">
         <div className="schedule-name-input">
