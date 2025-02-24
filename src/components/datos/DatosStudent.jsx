@@ -8,7 +8,7 @@ export default function DatosStudent({ register, errors, setValue, getValues }) 
     <br />
     <br />
       <h2>
-        Datos del Estudiante
+        Datos del Participante
       </h2>
       <div className="inputs-2">
         <div className="schedule-name-input">
@@ -150,8 +150,8 @@ export default function DatosStudent({ register, errors, setValue, getValues }) 
               {...register("student_age", {
                 required: 'ingrese Edad',
                 pattern: {
-                  value: /^[0-9]+$/,
-                  message: 'Solo se permiten numeros'
+                  value: /^(1[2-7])$/,
+                  message: 'ingrese una edad valida'
                 }
               })}
             />
