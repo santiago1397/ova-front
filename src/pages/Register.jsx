@@ -25,7 +25,7 @@ export default function Register() {
 
       ToastSuccess("Registrado Exitosamente")
 
-      /* reset() */ 
+      reset() 
     } catch (error) {
       console.log(error)
 
