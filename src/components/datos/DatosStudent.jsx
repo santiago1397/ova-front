@@ -118,7 +118,6 @@ export default function DatosStudent({ register, errors, setValue, getValues }) 
           <div>
             <input className="add-input-2" minLength={5} maxLength={70} type="text" 
               {...register("student_secondlastname", {
-                required: 'ingrese segundo apellido',
                 pattern: {
                   value: /^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$/,
                   message: 'Solo se permiten letras y espacios'
