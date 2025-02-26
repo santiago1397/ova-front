@@ -194,7 +194,7 @@ export default function DatosTutor({ register, errors, setValue, getValues }) {
 
 
 
-      <h2>
+      {/* <h2>
         Datos complementarios
       </h2>
 
@@ -228,7 +228,7 @@ export default function DatosTutor({ register, errors, setValue, getValues }) {
           </div>
         </div>
 
-      </div>
+      </div> */}
 
 
     </>

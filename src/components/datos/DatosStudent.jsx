@@ -146,7 +146,7 @@ export default function DatosStudent({ register, errors, setValue, getValues }) 
         <div className="schedule-name-input">
           <label>Edad:</label>
           <div>
-            <input className="add-input-2" minLength={1} maxLength={3} type="text" placeholder='nombre de la actividad'
+            <input className="add-input-2" minLength={1} maxLength={3} type="text" 
               {...register("student_age", {
                 required: 'ingrese Edad',
                 pattern: {
@@ -257,11 +257,11 @@ export default function DatosStudent({ register, errors, setValue, getValues }) 
         <div className="schedule-name-input">
           <label>Dirección:</label>
           <div>
-            <input className="add-input-2" minLength={5} maxLength={70} type="text" 
+            <input className="add-input-2" maxLength={70} type="text" 
               {...register("student_address", {
                 required: 'ingrese nombre de la actividad',
                 pattern: {
-                  value: /^[a-zA-Z0-9áéíóúÁÉÍÓÚñÑ\s]+$/,
+                  value: /^[a-zA-Z0-9áéíóúÁÉÍÓÚñÑ\s.,-/]+$/,
                   message: 'Solo se permiten letras, espacios y numeros'
                 }
               })}
