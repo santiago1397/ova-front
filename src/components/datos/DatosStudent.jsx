@@ -164,7 +164,7 @@ export default function DatosStudent({ register, errors, setValue, getValues }) 
           <label>Género:</label>
           <div>
             <select {...register("student_gender", {
-              required: 'Seleccione la Género',
+              required: 'Seleccione el Género',
             })}>
               <option value="Femenino">Femenino</option>
               <option value="Masculino">Masculino</option>
@@ -177,7 +177,7 @@ export default function DatosStudent({ register, errors, setValue, getValues }) 
           <label>Estado Civil:</label>
           <div>
             <select {...register("student_civilstatus", {
-              required: 'Seleccione la estado civil',
+              required: 'Seleccione el estado civil',
             })}>
               <option value="Soltero">Soltero</option>
               <option value="Casado">Casado</option>
@@ -306,6 +306,7 @@ export default function DatosStudent({ register, errors, setValue, getValues }) 
               <option value="C. Téc. 4to Año" >C. Téc. 4to Año</option>
               <option value="C. Téc. 5to Año" >C. Téc. 5to Año</option>
               <option value="C. Téc. 6to Año" >C. Téc. 6to Año</option>
+              <option value="Universitario" >Universitario</option>
             </select>
             <div>{errors.student_grade && <span className="error-message">{errors.student_grade.message}</span>}</div>
           </div>

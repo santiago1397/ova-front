@@ -13,6 +13,6 @@ export default function Admin() {
 
 
   return (
-    <div onClick={downloadingDB}>Admin</div>
+    <button onClick={downloadingDB}>Admin</button>
   )
 }
